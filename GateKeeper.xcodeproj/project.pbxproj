@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225695A91ADA2AF70021A0D9 /* GKGate.m in Sources */ = {isa = PBXBuildFile; fileRef = 225695A81ADA2AF70021A0D9 /* GKGate.m */; };
+		225695AE1ADA31620021A0D9 /* GKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 225695AD1ADA31620021A0D9 /* GKLocationManager.m */; };
+		225695B41ADE58DD0021A0D9 /* MattHouse.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 225695B31ADE58DD0021A0D9 /* MattHouse.gpx */; };
+		2284868B1ACE491F0029386A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284868A1ACE491F0029386A /* main.m */; };
+		2284868E1ACE491F0029386A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284868D1ACE491F0029386A /* AppDelegate.m */; };
+		228486941ACE491F0029386A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 228486921ACE491F0029386A /* Main.storyboard */; };
+		228486961ACE491F0029386A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 228486951ACE491F0029386A /* Images.xcassets */; };
+		228486991ACE491F0029386A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228486971ACE491F0029386A /* LaunchScreen.xib */; };
+		228486A51ACE491F0029386A /* GateKeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486A41ACE491F0029386A /* GateKeeperTests.m */; };
+		228486AF1ACE57700029386A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 228486AE1ACE57700029386A /* Settings.bundle */; };
+		228486B81ACE5ACB0029386A /* AppTokenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486B61ACE5ACB0029386A /* AppTokenController.m */; };
+		228486B91ACE5ACB0029386A /* AppTokenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228486B71ACE5ACB0029386A /* AppTokenController.xib */; };
+		228486BD1ACE5F050029386A /* GateLockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486BB1ACE5F050029386A /* GateLockController.m */; };
+		228486BE1ACE5F050029386A /* GateLockController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228486BC1ACE5F050029386A /* GateLockController.xib */; };
+		228486C21AD46B080029386A /* GKWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486C11AD46B080029386A /* GKWebService.m */; };
+		228486C51AD4701F0029386A /* GKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486C41AD4701F0029386A /* GKModel.m */; };
+		228486CC1AD48F000029386A /* GateKeeperService.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486CB1AD48F000029386A /* GateKeeperService.m */; };
+		228486D21AD49C5C0029386A /* GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486D11AD49C5C0029386A /* GKNavigationController.m */; };
+		228486D71AD4A3DB0029386A /* GKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228486D61AD4A3DB0029386A /* GKViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2284869F1ACE491F0029386A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2284867D1ACE491F0029386A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228486841ACE491F0029386A;
+			remoteInfo = GateKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		225695A71ADA2AF70021A0D9 /* GKGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKGate.h; sourceTree = "<group>"; };
+		225695A81ADA2AF70021A0D9 /* GKGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKGate.m; sourceTree = "<group>"; };
+		225695AC1ADA31620021A0D9 /* GKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKLocationManager.h; sourceTree = "<group>"; };
+		225695AD1ADA31620021A0D9 /* GKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKLocationManager.m; sourceTree = "<group>"; };
+		225695B01ADE57D50021A0D9 /* CBS.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CBS.gpx; sourceTree = "<group>"; };
+		225695B31ADE58DD0021A0D9 /* MattHouse.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MattHouse.gpx; sourceTree = "<group>"; };
+		228486851ACE491F0029386A /* GateKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GateKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		228486891ACE491F0029386A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2284868A1ACE491F0029386A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2284868C1ACE491F0029386A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2284868D1ACE491F0029386A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		228486931ACE491F0029386A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		228486951ACE491F0029386A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		228486981ACE491F0029386A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2284869E1ACE491F0029386A /* GateKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GateKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		228486A31ACE491F0029386A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		228486A41ACE491F0029386A /* GateKeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GateKeeperTests.m; sourceTree = "<group>"; };
+		228486AE1ACE57700029386A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		228486B51ACE5ACB0029386A /* AppTokenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTokenController.h; sourceTree = "<group>"; };
+		228486B61ACE5ACB0029386A /* AppTokenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTokenController.m; sourceTree = "<group>"; };
+		228486B71ACE5ACB0029386A /* AppTokenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppTokenController.xib; sourceTree = "<group>"; };
+		228486BA1ACE5F050029386A /* GateLockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateLockController.h; sourceTree = "<group>"; };
+		228486BB1ACE5F050029386A /* GateLockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateLockController.m; sourceTree = "<group>"; };
+		228486BC1ACE5F050029386A /* GateLockController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GateLockController.xib; sourceTree = "<group>"; };
+		228486C01AD46B080029386A /* GKWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKWebService.h; sourceTree = "<group>"; };
+		228486C11AD46B080029386A /* GKWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKWebService.m; sourceTree = "<group>"; };
+		228486C31AD4701F0029386A /* GKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKModel.h; sourceTree = "<group>"; };
+		228486C41AD4701F0029386A /* GKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKModel.m; sourceTree = "<group>"; };
+		228486CA1AD48F000029386A /* GateKeeperService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateKeeperService.h; sourceTree = "<group>"; };
+		228486CB1AD48F000029386A /* GateKeeperService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateKeeperService.m; sourceTree = "<group>"; };
+		228486D01AD49C5C0029386A /* GKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationController.h; sourceTree = "<group>"; };
+		228486D11AD49C5C0029386A /* GKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNavigationController.m; sourceTree = "<group>"; };
+		228486D51AD4A3DB0029386A /* GKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKViewController.h; sourceTree = "<group>"; };
+		228486D61AD4A3DB0029386A /* GKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		228486821ACE491F0029386A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2284869B1ACE491F0029386A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		225695AB1ADA31240021A0D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				225695AC1ADA31620021A0D9 /* GKLocationManager.h */,
+				225695AD1ADA31620021A0D9 /* GKLocationManager.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		2284867C1ACE491F0029386A = {
+			isa = PBXGroup;
+			children = (
+				228486871ACE491F0029386A /* GateKeeper */,
+				228486A11ACE491F0029386A /* GateKeeperTests */,
+				228486861ACE491F0029386A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		228486861ACE491F0029386A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				228486851ACE491F0029386A /* GateKeeper.app */,
+				2284869E1ACE491F0029386A /* GateKeeperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		228486871ACE491F0029386A /* GateKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				228486D41AD4A39B0029386A /* Navigation */,
+				228486D31AD4A37B0029386A /* View Controllers */,
+				225695AB1ADA31240021A0D9 /* Utilities */,
+				228486BF1AD46AE10029386A /* Model */,
+				228486951ACE491F0029386A /* Images.xcassets */,
+				228486881ACE491F0029386A /* Supporting Files */,
+			);
+			path = GateKeeper;
+			sourceTree = "<group>";
+		};
+		228486881ACE491F0029386A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				225695B31ADE58DD0021A0D9 /* MattHouse.gpx */,
+				225695B01ADE57D50021A0D9 /* CBS.gpx */,
+				228486891ACE491F0029386A /* Info.plist */,
+				2284868A1ACE491F0029386A /* main.m */,
+				228486AE1ACE57700029386A /* Settings.bundle */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		228486A11ACE491F0029386A /* GateKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				228486A41ACE491F0029386A /* GateKeeperTests.m */,
+				228486A21ACE491F0029386A /* Supporting Files */,
+			);
+			path = GateKeeperTests;
+			sourceTree = "<group>";
+		};
+		228486A21ACE491F0029386A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				228486A31ACE491F0029386A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		228486BF1AD46AE10029386A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				228486C91AD48ED30029386A /* Web Service */,
+				228486C31AD4701F0029386A /* GKModel.h */,
+				228486C41AD4701F0029386A /* GKModel.m */,
+				225695A71ADA2AF70021A0D9 /* GKGate.h */,
+				225695A81ADA2AF70021A0D9 /* GKGate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		228486C91AD48ED30029386A /* Web Service */ = {
+			isa = PBXGroup;
+			children = (
+				228486C01AD46B080029386A /* GKWebService.h */,
+				228486C11AD46B080029386A /* GKWebService.m */,
+				228486CA1AD48F000029386A /* GateKeeperService.h */,
+				228486CB1AD48F000029386A /* GateKeeperService.m */,
+			);
+			name = "Web Service";
+			sourceTree = "<group>";
+		};
+		228486D31AD4A37B0029386A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				228486B51ACE5ACB0029386A /* AppTokenController.h */,
+				228486B61ACE5ACB0029386A /* AppTokenController.m */,
+				228486B71ACE5ACB0029386A /* AppTokenController.xib */,
+				228486BA1ACE5F050029386A /* GateLockController.h */,
+				228486BB1ACE5F050029386A /* GateLockController.m */,
+				228486BC1ACE5F050029386A /* GateLockController.xib */,
+				228486D51AD4A3DB0029386A /* GKViewController.h */,
+				228486D61AD4A3DB0029386A /* GKViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		228486D41AD4A39B0029386A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2284868C1ACE491F0029386A /* AppDelegate.h */,
+				2284868D1ACE491F0029386A /* AppDelegate.m */,
+				228486D01AD49C5C0029386A /* GKNavigationController.h */,
+				228486D11AD49C5C0029386A /* GKNavigationController.m */,
+				228486921ACE491F0029386A /* Main.storyboard */,
+				228486971ACE491F0029386A /* LaunchScreen.xib */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		228486841ACE491F0029386A /* GateKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228486A81ACE491F0029386A /* Build configuration list for PBXNativeTarget "GateKeeper" */;
+			buildPhases = (
+				228486811ACE491F0029386A /* Sources */,
+				228486821ACE491F0029386A /* Frameworks */,
+				228486831ACE491F0029386A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GateKeeper;
+			productName = GateKeeper;
+			productReference = 228486851ACE491F0029386A /* GateKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2284869D1ACE491F0029386A /* GateKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228486AB1ACE491F0029386A /* Build configuration list for PBXNativeTarget "GateKeeperTests" */;
+			buildPhases = (
+				2284869A1ACE491F0029386A /* Sources */,
+				2284869B1ACE491F0029386A /* Frameworks */,
+				2284869C1ACE491F0029386A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				228486A01ACE491F0029386A /* PBXTargetDependency */,
+			);
+			name = GateKeeperTests;
+			productName = GateKeeperTests;
+			productReference = 2284869E1ACE491F0029386A /* GateKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2284867D1ACE491F0029386A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = mk;
+				TargetAttributes = {
+					228486841ACE491F0029386A = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					2284869D1ACE491F0029386A = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 228486841ACE491F0029386A;
+					};
+				};
+			};
+			buildConfigurationList = 228486801ACE491F0029386A /* Build configuration list for PBXProject "GateKeeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2284867C1ACE491F0029386A;
+			productRefGroup = 228486861ACE491F0029386A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				228486841ACE491F0029386A /* GateKeeper */,
+				2284869D1ACE491F0029386A /* GateKeeperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		228486831ACE491F0029386A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228486AF1ACE57700029386A /* Settings.bundle in Resources */,
+				228486B91ACE5ACB0029386A /* AppTokenController.xib in Resources */,
+				228486941ACE491F0029386A /* Main.storyboard in Resources */,
+				228486991ACE491F0029386A /* LaunchScreen.xib in Resources */,
+				228486961ACE491F0029386A /* Images.xcassets in Resources */,
+				225695B41ADE58DD0021A0D9 /* MattHouse.gpx in Resources */,
+				228486BE1ACE5F050029386A /* GateLockController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2284869C1ACE491F0029386A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		228486811ACE491F0029386A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225695AE1ADA31620021A0D9 /* GKLocationManager.m in Sources */,
+				225695A91ADA2AF70021A0D9 /* GKGate.m in Sources */,
+				228486B81ACE5ACB0029386A /* AppTokenController.m in Sources */,
+				228486D71AD4A3DB0029386A /* GKViewController.m in Sources */,
+				228486C51AD4701F0029386A /* GKModel.m in Sources */,
+				228486BD1ACE5F050029386A /* GateLockController.m in Sources */,
+				228486D21AD49C5C0029386A /* GKNavigationController.m in Sources */,
+				228486CC1AD48F000029386A /* GateKeeperService.m in Sources */,
+				2284868E1ACE491F0029386A /* AppDelegate.m in Sources */,
+				228486C21AD46B080029386A /* GKWebService.m in Sources */,
+				2284868B1ACE491F0029386A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2284869A1ACE491F0029386A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228486A51ACE491F0029386A /* GateKeeperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		228486A01ACE491F0029386A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 228486841ACE491F0029386A /* GateKeeper */;
+			targetProxy = 2284869F1ACE491F0029386A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		228486921ACE491F0029386A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				228486931ACE491F0029386A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		228486971ACE491F0029386A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				228486981ACE491F0029386A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		228486A61ACE491F0029386A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		228486A71ACE491F0029386A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		228486A91ACE491F0029386A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GateKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		228486AA1ACE491F0029386A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GateKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		228486AC1ACE491F0029386A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GateKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GateKeeper.app/GateKeeper";
+			};
+			name = Debug;
+		};
+		228486AD1ACE491F0029386A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GateKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GateKeeper.app/GateKeeper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		228486801ACE491F0029386A /* Build configuration list for PBXProject "GateKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228486A61ACE491F0029386A /* Debug */,
+				228486A71ACE491F0029386A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		228486A81ACE491F0029386A /* Build configuration list for PBXNativeTarget "GateKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228486A91ACE491F0029386A /* Debug */,
+				228486AA1ACE491F0029386A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		228486AB1ACE491F0029386A /* Build configuration list for PBXNativeTarget "GateKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228486AC1ACE491F0029386A /* Debug */,
+				228486AD1ACE491F0029386A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2284867D1ACE491F0029386A /* Project object */;
+}
