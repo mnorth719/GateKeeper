@@ -18,6 +18,7 @@
 - (void)registerPin:(NSNumber *)pin;
 - (void)openClosestGate;
 - (NSString *)token;
++ (id)nullify:(id)object;
 
 //error displaying
 void quickAlert(NSString *title, NSString *message, NSString *optionalButtonTitle);

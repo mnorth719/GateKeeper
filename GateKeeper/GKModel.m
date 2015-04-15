@@ -76,6 +76,14 @@
     }
 }
 
++ (id)nullify:(id)object {
+    if (object == nil) {
+        return [NSNull null];
+    }
+    
+    return object; 
+}
+
 void quickAlert(NSString *title, NSString *message, NSString *optionalButtonTitle) {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                     message:message

@@ -13,6 +13,7 @@ NSString * const GK_SERVICE_ROOT = @"api";
 @implementation GKWebService
 
 - (void)sendRequest:(NSString *)request toService:(NSString *)service withParams:(NSDictionary *)params withCompletion:(GKServiceCompletion)completion {
+    
     NSString *webURL = [[NSUserDefaults standardUserDefaults] valueForKey:@"webServiceURL"];
     
     if (!webURL){
@@ -61,12 +62,8 @@ NSString * const GK_SERVICE_ROOT = @"api";
     
     switch (statusCode) {
         case 404:
-        {
-            NSDictionary *userInfo = [NSDictionary dictionaryWithObject:[responseBody objectForKey:@"message"]
-                                                                 forKey:NSLocalizedDescriptionKey];
-            error = [[NSError alloc] initWithDomain:@"GKNotFound" code:statusCode userInfo:userInfo];
-        }
-            break;
+        case 403:
+        case 400:
         case 500:
         case 0:
         {
