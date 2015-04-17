@@ -14,9 +14,13 @@
 
 - (void)openGate;
 + (GKGate *)buildGateFromDictionary:(NSDictionary *)dictionary;
+- (NSDictionary *)convertToDictionary; 
 
 @property (nonatomic, strong) GKModel *model;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinates;
 @property (nonatomic, strong) CLLocation *location;
+@property (nonatomic, strong) NSString *gateId;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSDecimalNumber *proximity;
 
 @end

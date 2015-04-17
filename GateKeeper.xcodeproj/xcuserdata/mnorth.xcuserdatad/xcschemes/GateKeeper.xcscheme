@@ -85,7 +85,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../../GateKeeper/MattHouse.gpx"
+         identifier = "../../GateKeeper/CBS.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>

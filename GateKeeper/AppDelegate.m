@@ -14,9 +14,27 @@
 
 @implementation AppDelegate
 
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler {
+    NSLog(@"remote action");
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //open gate from notification
+    if (launchOptions) {
+        GKGate *gate = [GKGate buildGateFromDictionary:launchOptions];
+        
+        if (gate) {
+            [gate openGate];
+        }
+        
+    }else{
+        UIUserNotificationType types =  UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+        
+        UIUserNotificationSettings *mySettings =
+        [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        
+        [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    }
     return YES;
 }
 

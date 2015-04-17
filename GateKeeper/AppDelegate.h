@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GKGate.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

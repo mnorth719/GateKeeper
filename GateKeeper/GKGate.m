@@ -11,10 +11,6 @@
 
 @interface GKGate()
 
-@property (nonatomic, strong) NSString *gateId;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSDecimalNumber *proximity;
-
 @end
 
 
@@ -65,6 +61,16 @@
     gate.coordinates = CLLocationCoordinate2DMake(lat, lon);
     gate.proximity = [NSDecimalNumber decimalNumberWithDecimal:[dictionary[@"proximity"] decimalValue]];
     return gate;
+}
+
+- (NSDictionary *)convertToDictionary {
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                self.name, @"name",
+                                self.gateId , @"gateId",
+                                self.proximity, @"proximity"
+                                , nil];
+    
+    return dictionary;
 }
 
 @end

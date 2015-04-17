@@ -65,9 +65,18 @@ NSString * const GK_SERVICE_ROOT = @"api";
         case 403:
         case 400:
         case 500:
+        case 503:
         case 0:
         {
-            NSDictionary *userInfo = [NSDictionary dictionaryWithObject:[responseBody objectForKey:@"message"]
+            
+            NSString *errorMsg;
+            if ([responseBody objectForKey:@"message"]) {
+                errorMsg = [responseBody objectForKey:@"message"];
+            }else{
+                errorMsg = @"Unknown Error";
+            }
+            
+            NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errorMsg
                                                                  forKey:NSLocalizedDescriptionKey];
             error = [[NSError alloc] initWithDomain:@"GKNotFound" code:statusCode userInfo:userInfo];
         }

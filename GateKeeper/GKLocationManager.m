@@ -36,13 +36,31 @@
     
     for (GKGate *gate in gates) {
     
-        if ([self.locationManager.location distanceFromLocation:closesGate.location] >
-            [self.locationManager.location distanceFromLocation:gate.location] || closesGate == nil) {
+        if ([[self getLocation] distanceFromLocation:closesGate.location] >
+            [[self getLocation] distanceFromLocation:gate.location] || closesGate == nil) {
             closesGate = gate;
         }
     }
     
     return closesGate;
+}
+
+- (void)registerGatesAsRegions:(NSArray *)gates {
+    
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+
+    for (GKGate *gate in gates) {
+        CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:gate.coordinates
+                                                                     radius:500.0f
+                                                                 identifier:gate.name];
+        
+        [self.locationManager startMonitoringForRegion:(CLRegion *)region];
+    }
+    
+}
+
+- (CLLocation *)getLocation {
+    return self.locationManager.location;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
@@ -51,6 +69,24 @@
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     [manager startUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+    
+    UILocalNotification *notification = [UILocalNotification new];
+    notification.alertAction = @"Unlock";
+    notification.alertBody = @"Swipe to unlock gate %@";
+    notification.alertTitle = @"Found Gate!";
+    
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
+- (void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error {
+    quickAlert(@"Error", [error localizedDescription], nil);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
+    NSLog(@"started monitoring");
 }
 
 

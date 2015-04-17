@@ -14,5 +14,7 @@
 @interface GKLocationManager : NSObject <CLLocationManagerDelegate>
 
 - (GKGate *)getClosestGate:(NSArray *)gates;
+- (CLLocation *)getLocation;
+- (void)registerGatesAsRegions:(NSArray *)gates;
 
 @end

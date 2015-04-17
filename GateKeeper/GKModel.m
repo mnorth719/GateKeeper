@@ -60,6 +60,8 @@
             self.userId = response[@"userId"];
             [[NSUserDefaults standardUserDefaults] setValue:[response objectForKey:@"token"] forKey:@"appToken"];
             
+            [self.locationManager registerGatesAsRegions:self.gates];
+            
         }else {
             quickAlert(@"Error", [error localizedDescription], nil);
         }
@@ -68,11 +70,13 @@
 
 - (void)openClosestGate {
     GKGate *closestGate = [self.locationManager getClosestGate:self.gates];
-
-    if (closestGate) {
+    NSDecimalNumber *distance = [[NSDecimalNumber alloc] initWithDouble:[[self.locationManager getLocation] distanceFromLocation:closestGate.location]];
+    distance = [GKModel roundToNearestHundreths:distance];
+    
+    if (closestGate && [closestGate.proximity compare:distance] != NSOrderedAscending) {
         [closestGate openGate];
     }else{
-        quickAlert(@"Error", @"Error finding closest gate", nil);
+        quickAlert(@"Error", @"No gates found in range.", nil);
     }
 }
 
@@ -82,6 +86,20 @@
     }
     
     return object; 
+}
+
++ (NSDecimalNumber *)roundToNearestHundreths:(NSDecimalNumber *)number
+{
+    NSDecimalNumberHandler *roundingBehavior = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundBankers
+                                                                                                      scale:2
+                                                                                           raiseOnExactness:NO
+                                                                                            raiseOnOverflow:YES
+                                                                                           raiseOnUnderflow:YES
+                                                                                        raiseOnDivideByZero:YES];
+    
+    NSDecimalNumber *rounded = [number decimalNumberByRoundingAccordingToBehavior:roundingBehavior];
+    
+    return rounded;
 }
 
 void quickAlert(NSString *title, NSString *message, NSString *optionalButtonTitle) {
